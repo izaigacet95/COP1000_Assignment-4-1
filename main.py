@@ -1,22 +1,23 @@
 # This program calculates prices for custom house signs.
 
 # Declare and initialize variables here.
-charge = 35.00  # Base charge for the sign
+charge = 35.00    # Base charge for this sign.
+additional_charge = 4.00    # Charge for additional characters beyond the first 5.
 
 # Prompt user for input
-num_chars = int(input("Enter the number of characters on the sign: "))
-wood_type = input("Enter the type of wood (e.g., oak, pine): ")
-color = input("Enter the color of characters (e.g., black, white, gold): ")
+num_chars = int(input("Enter the number of characters on the sign: "))   # Number of characters
+wood_type = input("Enter the type of wood ")    # Type of wood
+color = input("Enter the color of characters ")    # Color of characters
 
-# Calculate additional charge based on the number of characters.
+# Calculate additional charges for characters beyond 5.
 if num_chars > 5:
-    charge += (num_chars - 5) * 4
+    charge += (num_chars - 5) * additional_charge
 
-# Add cost for character color.
+# Add cost for Color of character.
 if color.lower() == "gold":
     charge += 15
 
-# Add cost for wood type.
+# Add cost for Type of wood.
 if wood_type.lower() == "oak":
     charge += 20
 

@@ -6,8 +6,8 @@ additional_charge = 4.00    # Charge for additional characters beyond the first 
 
 # Prompt user for input
 num_chars = int(input("Enter the number of characters on the sign: "))   # Number of characters
-wood_type = input("Enter the type of wood ")    # Type of wood
-color = input("Enter the color of characters ")    # Color of characters
+wood_type = input("Enter the type of wood: ")    # Type of wood
+color = input("Enter the color of characters: ")    # Color of characters
 
 # Calculate additional charges for characters beyond 5.
 if num_chars > 5:
